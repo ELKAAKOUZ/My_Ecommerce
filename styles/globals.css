@@ -3,7 +3,23 @@
 @tailwind utilities;
 
 @layer components {
+  /* .input {
+      @apply m-10  w-1/2 border-2 rounded-full  text-center mx-auto
+    } */
+  .input {
+    @apply border-2 rounded-full  text-center mx-auto  w-[80%] m-5 md:w-[75%] lg:w-[50%];
+  }
+  .input1 {
+    @apply flex items-center space-x-5 md:space-x-10 w-[80%] m-5 md:w-[75%] lg:w-[50%] mx-auto;
+  }
+  .input2 {
+    @apply p-2  md:p-5 rounded-full text-gray-400 outline-none border-2 text-xs md:text-sm;
+  }
+  .input3 {
+    @apply flex flex-col justify-start w-[50%];
+  }
+
   .button {
-    @apply text-xs p-2 md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400 border border-yellow-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 active:from-yellow-500;
+    @apply text-xs w-[75%] md:w-[50%] p-2 md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400 border border-yellow-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 active:from-yellow-500;
   }
 }

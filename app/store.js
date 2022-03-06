@@ -1,8 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import basketReducer from "../slices/basketSlice";
-
-export const store = configureStore({
-  reducer: {
-    basket: basketReducer,
-  },
-});
+import advsReducer from "../slices/advsSlice";
+export const store =configureStore({
+    reducer:{
+        advertisments:advsReducer,
+    }
+})
